@@ -19,7 +19,7 @@ export async function PUT(req: Request) {
 
     const data = await response.json();
     console.log(data);
-    console.log("IAMHERERERE");
+
     if (!response.ok) throw new Error(data.message || "Failed to update todo");
 
     return NextResponse.json(data);

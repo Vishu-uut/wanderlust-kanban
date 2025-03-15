@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useKanban } from '../context/KanbanContext';
 import KanbanTask from './KanbanTask';
 import { Button } from '@/app/components/ui/button';
-import { Plus, MoreHorizontal } from 'lucide-react';
+import { Plus, MoreHorizontal,Pencil , Trash2 } from 'lucide-react';
 import { 
   Dialog, 
   DialogContent, 
@@ -15,7 +15,6 @@ import {
 } from '@/app/components/ui/dialog';
 import { Input } from '@/app/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Label } from '@/app/components/ui/label';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { KanbanColumn as KanbanColumnType, KanbanTask as KanbanTaskType } from '../types/kanban';
@@ -138,58 +137,48 @@ const KanbanColumn: React.FC<KanbanColumnProps> = ({
     }}
   >
     <div className="flex items-center justify-between mb-4">
-      <div className="flex items-center">
-        <div
-          className="w-3 h-3 rounded-full mr-2"
-          style={{ backgroundColor: column.darkColor }}
-        />
-        <h3 className="font-medium flex items-center">
-          {column.title} 
-          <span className="ml-2 text-sm text-muted-foreground">
-            {column.tasks.length}
-          </span>
-        </h3>
-      </div>
-      
-      <div className="flex items-center">
-        <Button 
-          variant="ghost" 
-          size="icon" 
-          className="h-8 w-8" 
-          onClick={() => setIsAddingTask(true)}
-        >
-          <Plus className="h-4 w-4" />
-        </Button>
-        
-        <Popover>
-          <PopoverTrigger asChild>
-            <Button variant="ghost" size="icon" className="h-8 w-8">
-              <MoreHorizontal className="h-4 w-4" />
-            </Button>
-          </PopoverTrigger>
-          <PopoverContent className="w-48" align="end">
-            <div className="flex flex-col space-y-1">
-              <Button 
-                variant="ghost" 
-                size="sm" 
-                className="justify-start"
-                onClick={() => setIsEditingColumn(true)}
-              >
-                Edit
-              </Button>
-              <Button 
-                variant="ghost" 
-                size="sm" 
-                className="justify-start text-destructive hover:text-destructive"
-                onClick={handleDeleteColumn}
-              >
-                Delete
-              </Button>
-            </div>
-          </PopoverContent>
-        </Popover>
-      </div>
-    </div>
+  <div className="flex items-center">
+    <div
+      className="w-3 h-3 rounded-full mr-2"
+      style={{ backgroundColor: column.darkColor }}
+    />
+    <h3 className="font-medium flex items-center">
+      {column.title} 
+      <span className="ml-2 text-sm text-muted-foreground">
+        {column.tasks.length}
+      </span>
+    </h3>
+  </div>
+  
+  <div className="flex items-center space-x-1">
+    <Button 
+      variant="ghost" 
+      size="icon" 
+      className="h-8 w-8" 
+      onClick={() => setIsAddingTask(true)}
+    >
+      <Plus className="h-4 w-4" />
+    </Button>
+    
+    <Button 
+      variant="ghost" 
+      size="icon" 
+      className="h-8 w-8  hover:text-primary" 
+      onClick={() => setIsEditingColumn(true)}
+    >
+      <Pencil className="h-4 w-4" />
+    </Button>
+    
+    <Button 
+      variant="ghost" 
+      size="icon" 
+      className="h-8 w-8  hover:text-red-600" 
+      onClick={handleDeleteColumn}
+    >
+      <Trash2 className="h-4 w-4" />
+    </Button>
+  </div>
+</div>
     
     <div className="space-y-2 min-h-[50px]"> {/* Changed from ScrollArea to div with spacing */}
       {column.tasks.map(task => (
