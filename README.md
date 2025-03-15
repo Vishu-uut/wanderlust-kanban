@@ -1,10 +1,3 @@
-Sure! Here's the full **README.md** code, formatted properly so you can just copy and paste it.  
-
----
-
-### 📌 **README.md for Kanban Board App**  
-
-```markdown
 # 📝 Kanban Board App
 
 A **Kanban Board Application** built using **Next.js**, designed to help manage tasks efficiently. This app allows users to create, edit, and organize tasks seamlessly within different columns.
@@ -12,23 +5,23 @@ A **Kanban Board Application** built using **Next.js**, designed to help manage 
 ---
 
 ## 🚀 Features
-- **Task Management**: Add, edit, and delete tasks.
-- **Customizable Columns**: Modify workflow stages as needed.
-- **Drag & Drop**: Rearrange tasks using a smooth drag-and-drop interface.
-- **User Authentication**: Secure login and session management.
-- **Responsive UI**: Works across desktop and mobile devices.
-- **Shimmer Effect**: Enhances UX with smooth loading animations.
-- **Color Picker**: Customize board and task colors.
+
+- 📝 **Task Management** – Add, edit, and delete tasks.
+- 🏗️ **Customizable Columns** – Modify workflow stages as needed.
+- 🎯 **Drag & Drop** – Rearrange tasks smoothly.
+- 🔒 **User Authentication** – Secure login and session management.
+- 📱 **Responsive UI** – Works on both desktop and mobile.
+- ✨ **Shimmer Effect** – Enhances UX with smooth loading animations.
+- 🎨 **Color Picker** – Customize board and task colors.
 
 ---
 
 ## 🛠️ Installation
 
-1. Clone this repository:
+1. **Clone this repository:**
    ```bash
    git clone https://github.com/your-username/kanban-board.git
    cd kanban-board
-   ```
 2. Install dependencies:
    ```bash
    npm install
@@ -110,14 +103,7 @@ Pull requests are welcome! Please open an issue first to discuss any changes.
 ---
 
 ## 📧 Contact
-For any inquiries or support, feel free to reach out at `your-email@example.com`.
+For any inquiries or support, feel free to reach out at `vishwasgupta.iitd@gmail.com`.
 ```
 
----
 
-### ✅ Instructions:
-- Replace `your-username` in the GitHub link with your actual username.
-- Replace `your-email@example.com` with your contact email.
-- Ensure that all images are stored in the `./Screenshots` folder for proper linking.
-
-You're all set! 🚀 Let me know if you need any modifications.
