@@ -9,7 +9,7 @@ const KanbanPage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    const storedFirstName = localStorage.getItem('firstName');
+    const storedFirstName = localStorage.getItem('username');
     if (storedFirstName) {
       setFirstName(storedFirstName);
     } else {
