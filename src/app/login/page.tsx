@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation';
 import { Button } from "../components/ui/button"
 import { Input } from "../components/ui/input"
 import { Label } from "../components/ui/label"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Alert, AlertDescription } from "@/components/ui/alert"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
+import { Alert, AlertDescription } from "../components/ui/alert"
 import { Loader2, Eye, EyeOff } from "lucide-react"
 
 const LoginPage = () => {

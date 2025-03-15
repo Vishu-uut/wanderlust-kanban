@@ -14,9 +14,9 @@ import {
   DialogFooter 
 } from '@/app/components/ui/dialog';
 import { Input } from '@/app/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { Textarea } from '../components/ui/textarea';
 import { Label } from '@/app/components/ui/label';
-import { ScrollArea } from '@/components/ui/scroll-area';
+import { ScrollArea } from '../components/ui/scroll-area';
 import { KanbanColumn as KanbanColumnType, KanbanTask as KanbanTaskType } from '../types/kanban';
 import { cn } from '@/lib/utils';
 

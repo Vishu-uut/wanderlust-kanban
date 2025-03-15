@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from 'react';
-import { Card } from '@/components/ui/card';
+import { Card } from '../components/ui/card';
 import { MoreHorizontal } from 'lucide-react';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Popover, PopoverContent, PopoverTrigger } from '../components/ui/popover';
 import { Button } from '@/app/components/ui/button';
 import { KanbanTask as KanbanTaskType } from '../types/kanban';
 import { Input } from '@/app/components/ui/input';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/app/components/ui/dialog';
-import { ScrollArea } from '@/components/ui/scroll-area';
+import { ScrollArea } from '../components/ui/scroll-area';
 import { useKanban } from '../context/KanbanContext';
 import axios from 'axios';
 
