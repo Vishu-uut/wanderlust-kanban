@@ -1,0 +1,20 @@
+.shimmer-wrapper {
+    width: 320px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
+    background: #6c757d;
+    background-image: linear-gradient(to right, #d6d7d885 0%, #b0b0b0 20%, #d6d7d8 40%, #d6d7d8 100%);
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    margin: 0 8px; /* Optional: Add margin for spacing */
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
